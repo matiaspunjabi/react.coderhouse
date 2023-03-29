@@ -1,0 +1,35 @@
+
+.searchBar input{
+    padding: .7em 7em .7em 1em;
+    background-color: var(--color3);
+    border: 2px solid var(--color1);
+    border-right: none;
+}
+
+.searchBar input:active{
+    border: 2px solid var(--color1);
+    outline: none;
+}
+.searchBar input:focus{
+    border: 2px solid var(--color1);
+    outline: none;
+    border-right: none;
+}
+
+.searchBar button{
+    padding: .7em 2em;
+    color: var(--color1);
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: var(--color3);
+    border: 2px solid var(--color1);
+    border-left: none;
+    cursor: pointer;
+}
+
+.searchBar button:hover{
+    background-color: var(--color1);
+    color: white;
+    transition: all .2s;
+}
+

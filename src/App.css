@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color1: #bfd33c;
+  --color2: #f8b951;
+  --color3: #ebebeb;
+  --color4: #2b2b2b;
+
+}
+
+body{
+  margin: auto;
+  max-width: 80em;
+  background-color: var(--color3);
+}

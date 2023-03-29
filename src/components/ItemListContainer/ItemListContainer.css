@@ -1,0 +1,10 @@
+.greetingContainer{
+    width: 100%;
+    padding: 1em 0;
+    margin: 1em 0;
+    color: var(--color4);
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: var(--color2);
+}
