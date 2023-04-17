@@ -1,0 +1,8 @@
+.itemDetailContainer{
+    max-width: 50em;
+    margin: 1em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.itemDetailContainer img{
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+}
+
+.itemDetailContainer div {
+    padding: 0 2em;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.itemDetailContainer div h2 {
+    text-transform: capitalize;
+}

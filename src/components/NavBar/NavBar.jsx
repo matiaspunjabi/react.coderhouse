@@ -16,9 +16,6 @@ const NavBar = () =>{
                 <ul>
                     <li>ofertas</li>
                     <li>nuevos productos</li>
-                    <li>próximamente</li>
-                    <li>celíacos</li>
-                    <li>veganos</li>
                 </ul>
             </nav>
         </header>

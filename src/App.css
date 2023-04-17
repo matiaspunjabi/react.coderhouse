@@ -16,4 +16,5 @@ body{
   margin: auto;
   max-width: 80em;
   background-color: var(--color3);
+  color: var(--color4);
 }
