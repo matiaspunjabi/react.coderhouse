@@ -1,8 +1,8 @@
 .itemContainer{
-   width: 10em;
+   width: 12em;
    background-color: var(--color1);
    margin: 1em 2em 0 0;
-   padding: 1em;
+   padding-bottom: 1em;
 
    display: flex;
    flex-direction: column;
@@ -11,7 +11,7 @@
 }
 
 .itemContainer img{
-    width: 10em;
-    height: 10em;
+    width: 12em;
+    height: 12em;
     object-fit: cover;
 }

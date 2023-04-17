@@ -1,4 +1,4 @@
-import React from "react";
+import {Link, NavLink} from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
 import CartWidget from "../CartWidget/CartWidget";
 import "./NavBar.css"
@@ -9,13 +9,14 @@ const NavBar = () =>{
         <header>
             <nav>
                 <div className="searchCartContainer">
-                    <img src={logo} alt="logo dietetica a granel" />
+                    
+                    <Link to={"/"}><img src={logo} alt="logo dietetica a granel" /></Link>
                     <SearchBar/>
                     <CartWidget/>
                 </div>
                 <ul>
-                    <li>ofertas</li>
-                    <li>nuevos productos</li>
+                    <NavLink to={'/categoria/1'}><li>ofertas</li></NavLink>
+                    <NavLink to={'/categoria/2'}><li>nuevos productos</li></NavLink>
                 </ul>
             </nav>
         </header>
