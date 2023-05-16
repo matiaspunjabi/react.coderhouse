@@ -16,7 +16,7 @@ const NavBar = () =>{
                 </div>
                 <ul>
                     <NavLink to={'/categoria/1'}><li>frutos secos</li></NavLink>
-                    <NavLink to={'/categoria/2'}><li>proximamente</li></NavLink>
+                    <NavLink to={'/categoria/2'}><li>nuevos productos</li></NavLink>
                 </ul>
             </nav>
         </header>

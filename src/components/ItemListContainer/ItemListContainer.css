@@ -3,3 +3,10 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+.itemListContainer h2:first-child {
+    width: 100%;
+    text-align: center;
+    color: var(--color2);
+    font-size: 2em;
+}

@@ -1,0 +1,9 @@
+.itemDetailContainer div .countContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.countContainer button{
+    padding: .5em 1em;
+}
