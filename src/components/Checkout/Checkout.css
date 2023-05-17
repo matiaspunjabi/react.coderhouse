@@ -1,0 +1,25 @@
+
+div form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkoutInput{
+    width: 20em;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkoutInput label{
+    color: var(--color4);
+    font-weight: bold;
+}
+
+.checkoutBtn{
+    padding: .5em 1em;
+    margin: 1em auto;
+}

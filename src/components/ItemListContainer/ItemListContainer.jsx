@@ -8,6 +8,7 @@ import { db } from '../../services/firebase/config';
 const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
+    const [cargando, setCargando] = useState(true);
 
     const {idCategoria} = useParams();
 
@@ -17,6 +18,7 @@ const ItemListContainer = () => {
         getDocs(misProductos)
             .then(res=> {
                 const nuevosProductos = res.docs.map( doc => {
+                    setCargando(false);
                     const data = doc.data()
                     return {id:doc.id, ...data}
                 })
@@ -28,7 +30,7 @@ const ItemListContainer = () => {
     return (
         <div className='itemListContainer'>
             <h2> Productos </h2>
-            <ItemList productos={productos} />
+            {!cargando ? (<ItemList productos={productos} />) : "Cargando Productos..."}
         </div>
     )
 }

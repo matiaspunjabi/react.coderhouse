@@ -7,6 +7,7 @@ import {getDoc, doc} from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState(null);
+    const [cargando, setCargando] = useState(true);
 
     const {idItem} = useParams();
 
@@ -18,14 +19,14 @@ const ItemDetailContainer = () => {
                 const data = res.data(); 
                 const nuevoProducto = {id: res.id, ...data}
                 setProducto(nuevoProducto);
+                setCargando(false);
             })
             .catch( error => console.log(error))
-
     }, [idItem])
 
     return (
         <div className="itemDetailContainer">
-            <ItemDetail {...producto} />
+            { !cargando ? (<ItemDetail {...producto} />) : "Cargando producto..."}
         </div>
     )
 }
